@@ -1,0 +1,17 @@
+sample.php
+ExactTargetWSDL.xml
+config.php
+/objsamples/ExactTargetWSDL.xml
+/objsamples/AllTest.bat
+.DS_Store
+objsamples/sample-testing.php
+/vendor
+/objsamples/sample-asset-TestFilePath.txt
+/objsamples/sample-asset-upload.php
+/tests/CampaignAssetTest.php
+/tests/ImportListTest.php
+.vscode
+phpunit-*.phar
+composer.phar
+.idea
+.cache
