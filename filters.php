@@ -62,3 +62,19 @@ function newsletterglue_sf_add_esp( $list ) {
 
 	return $list;
 }
+
+
+/**
+ * Custom location for salesforce icon
+ */
+add_filter( 'nglue_backend_args', 'newsletterglue_sf_backend_args' );
+function newsletterglue_sf_backend_args( $args ) {
+	$esps = newsletterglue_get_supported_apps();
+	foreach( $esps as $key => $value ) {
+		if( $key == 'salesforce' ) {
+			$args[ 'esp_icons' ][ $key ] = NGSF_PLUGIN_URL . 'assets/images/iconset/' . $key . '.png';
+		}
+	}
+
+	return $args;
+}
