@@ -105,6 +105,7 @@ final class NG_Salesforce {
 	private function includes() {
 
 		require_once NGSF_PLUGIN_DIR . 'filters.php';
+		require_once NGSF_PLUGIN_DIR . 'deactivation.php';
 
 		if ( is_admin() || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
 
